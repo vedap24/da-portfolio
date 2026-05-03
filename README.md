@@ -4,11 +4,9 @@
 [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-> **Live Demo:** [Link to be added upon deployment]
 
 Welcome to my personal Data Analytics portfolio! This project was built to showcase my expertise in marketing analytics, SQL, Python, and data visualization. 
 
-![Portfolio Preview](./public/screenshot.png) *(Note: Add a screenshot of your website here and name it `screenshot.png` in the `public` folder)*
 
 ## 🌟 Why React & Vite?
 This portfolio was purposely built with **React** and **Vite** rather than a standard website builder. As a Data Analyst, I wanted a portfolio that reflects modern web capabilities—delivering blazing-fast performance, dynamic data-inspired micro-animations, and a highly responsive layout that looks incredible on both desktop and mobile devices.
