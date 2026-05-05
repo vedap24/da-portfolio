@@ -1,8 +1,45 @@
 .about-content {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 2fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
+}
+
+.about-photo-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  transition: all 0.3s ease;
+}
+
+.about-photo-wrapper:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.2);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* CSS enhancement to make any photo match the black & white theme nicely */
+  filter: grayscale(100%) contrast(1.1) brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.about-photo-wrapper:hover .about-photo {
+  /* Subtle emerald tint / contrast adjustment on hover */
+  filter: grayscale(80%) contrast(1.15) brightness(1) sepia(20%) hue-rotate(100deg);
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .about-text {
@@ -53,6 +90,11 @@
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
+  }
+  
+  .about-photo-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }

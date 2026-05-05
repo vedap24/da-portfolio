@@ -12,25 +12,41 @@ export default function About() {
         </h2>
         
         <div className="about-content">
-          <div className="about-text">
-            <p>
-              I am Veda Praneeth, an aspiring Data Analyst focused on marketing analytics. I work with SQL, Python, Excel, Power BI, Tableau, and Google Analytics to analyze data, build reports, and communicate findings clearly. 
-            </p>
-            <p>
-              My key areas of interest include campaign performance, customer segmentation, churn analysis, funnel analysis, ROI, and A/B testing. 
-            </p>
-            <p>
-              I am currently looking for job opportunities where I can grow as a data professional and contribute to data-driven marketing strategies.
-            </p>
+          <div className="about-photo-wrapper">
+            {/* 
+              This is kept ready for your correct professional black-and-white profile photo. 
+              Once you have the image file, place it in src/assets/ and update the src path here.
+              The CSS filters will automatically enhance it to match the website's tone and palette.
+            */}
+            <img 
+              src="/src/assets/profile.jpg" 
+              alt="Veda Praneeth" 
+              className="about-photo"
+              onError={(e) => { e.target.style.opacity = 0; }}
+            />
           </div>
-          <div className="about-stats">
-            <div className="stat-card">
-              <h3>Marketing</h3>
-              <p>Analytics Focus</p>
+          
+          <div className="about-info">
+            <div className="about-text">
+              <p>
+                I am Veda Praneeth, an aspiring Data Analyst focused on marketing analytics. I work with SQL, Python, Excel, Power BI, Tableau, and Google Analytics to analyze data, build reports, and communicate findings clearly. 
+              </p>
+              <p>
+                My key areas of interest include campaign performance, customer segmentation, churn analysis, funnel analysis, ROI, and A/B testing. 
+              </p>
+              <p>
+                I am currently looking for job opportunities where I can grow as a data professional and contribute to data-driven marketing strategies.
+              </p>
             </div>
-            <div className="stat-card">
-              <h3>Data</h3>
-              <p>Driven Strategies</p>
+            <div className="about-stats">
+              <div className="stat-card">
+                <h3>Marketing</h3>
+                <p>Analytics Focus</p>
+              </div>
+              <div className="stat-card">
+                <h3>Data</h3>
+                <p>Driven Strategies</p>
+              </div>
             </div>
           </div>
         </div>
